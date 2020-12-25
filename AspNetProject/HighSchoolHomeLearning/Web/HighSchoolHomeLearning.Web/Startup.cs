@@ -8,7 +8,7 @@
     using HighSchoolHomeLearning.Data.Models;
     using HighSchoolHomeLearning.Data.Repositories;
     using HighSchoolHomeLearning.Data.Seeding;
-    using HighSchoolHomeLearning.Services.Data;
+    //using HighSchoolHomeLearning.Services.Data;
     using HighSchoolHomeLearning.Services.Mapping;
     using HighSchoolHomeLearning.Services.Messaging;
     using HighSchoolHomeLearning.Web.ViewModels;
@@ -64,7 +64,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

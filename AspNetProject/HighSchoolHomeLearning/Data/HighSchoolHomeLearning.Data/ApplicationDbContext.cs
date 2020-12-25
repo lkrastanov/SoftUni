@@ -24,7 +24,17 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Grade> Grades { get; set; }
+
+        public DbSet<Subject> Subjects { get; set; }
+
+        public DbSet<GradeSubject> GradesSubjects { get; set; }
+
+        public DbSet<Lesson> Lessons { get; set; }
+
+        public DbSet<Question> Questions { get; set; }
+
+        public DbSet<Answer> Answers { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 
